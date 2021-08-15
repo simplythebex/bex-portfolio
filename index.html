@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -55,6 +57,10 @@
               <i class="fab fa-sass"></i>
               <i class="fab fa-html5"></i>
               <i class="fab fa-bootstrap"></i>
+              <!-- mongoDB -->
+              <!-- bulma -->
+              <!-- postgreSQL -->
+              <!-- SQLite -->
             </div>
         </div>
       </div>
@@ -62,6 +68,22 @@
     <section class="projects">
       <div class="projects">
         <h2>Projects</h2>
+        <div class="carousel-container">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="./assets/carousel-images/petpals.png" alt="petpals project" /></li>
+                <li class="glide__slide"><img src="./assets/carousel-images/heiss.png" alt="heiss project" /></li>
+                <li class="glide__slide"><img src="./assets/carousel-images/newsapp.png" alt="newsapp project" /></li>
+                <li class="glide__slide"><img src="./assets/carousel-images/animal-crossing-pacman.png" alt="animal crossing project" /></li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<"> < </button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+            </div>
+          </div>
+      </div>
       </div>
     </section>
     <footer>
@@ -72,4 +94,9 @@
       </div>
       <p>Built by Bex using HTML5, CSS3 and vanilla JavaScript</p>
     </footer>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      new Glide('.glide').mount()
+    </script>
   </body>

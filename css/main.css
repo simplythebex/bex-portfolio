@@ -171,6 +171,23 @@ i {
   text-align: center;
 }
 
+/* carousel styling */
+.carousel-container {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 30px; */
+  margin: 0 auto;
+}
+
+.carousel-container img {
+  object-fit: contain;
+  height: 200px;
+  width: 100%;
+}
+
 
 
 
