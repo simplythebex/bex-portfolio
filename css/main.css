@@ -163,12 +163,14 @@ i {
 
 .projects {
   background-color: #f0dcca;
+  height: 500px;
 }
 
 .projects h2 {
   margin: 0;
   padding: 20px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 /* carousel styling */
@@ -178,7 +180,7 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 30px; */
+  /* padding: 10px; */
   margin: 0 auto;
 }
 
@@ -188,8 +190,22 @@ i {
   width: 100%;
 }
 
+.carousel-card {
+  /* background-color: white; */
+  padding: 10px 0;
+  margin: 20px;
+}
 
+.carousel-container h4 {
+  font-family: 'Limelight', cursive;
+  text-align: center;
+  font-size: 1.2em;
+}
 
+.carousel-card .description {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 /* footer styling  */
 

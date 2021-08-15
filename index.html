@@ -72,16 +72,60 @@
           <div class="glide">
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides">
-                <li class="glide__slide"><img src="./assets/carousel-images/petpals.png" alt="petpals project" /></li>
-                <li class="glide__slide"><img src="./assets/carousel-images/heiss.png" alt="heiss project" /></li>
-                <li class="glide__slide"><img src="./assets/carousel-images/newsapp.png" alt="newsapp project" /></li>
-                <li class="glide__slide"><img src="./assets/carousel-images/animal-crossing-pacman.png" alt="animal crossing project" /></li>
+                <li class="glide__slide">
+                  <div class="carousel-card">
+                    <div class="title">
+                      <h4>PetPals</h4>
+                    </div>
+                    <img src="./assets/carousel-images/petpals.png" alt="petpals project" />
+                    <div class="description">
+                      <a href="https://sei56-petpals.herokuapp.com/" target="_blank"><p>Deployed App</p></a>
+                      <a href="https://github.com/simplythebex/sei-project-4" target="_blank"><p>ReadMe</p></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="carousel-card">
+                    <div class="title">
+                      <h4>Heiss</h4>
+                    </div>
+                    <img src="./assets/carousel-images/heiss.png" alt="heiss project" />
+                    <div class="description">
+                      <a href="https://sei56-heiss.herokuapp.com/" target="_blank"><p>Deployed App</p></a>
+                      <a href="https://github.com/simplythebex/SEI56-Project-3" target="_blank"><p>ReadMe</p></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="carousel-card">
+                    <div class="title">
+                      <h4>NewsApp</h4>
+                    </div>
+                    <img src="./assets/carousel-images/newsapp.png" alt="newsapp project" />
+                    <div class="description">
+                      <a href="https://simplythebex-news-app.netlify.app/" target="_blank"><p>Deployed App</p></a>
+                      <a href="https://github.com/simplythebex/SEI-56-mini-react-project" target="_blank"><p>ReadMe</p></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="carousel-card">
+                    <div class="title">
+                      <h4>Animal Crossing: PacMan Edition</h4>
+                    </div>
+                    <img src="./assets/carousel-images/animal-crossing-pacman.png" alt="animal crossing project" />
+                    <div class="description">
+                      <a href="https://simplythebex.github.io/sei-project-1/" target="_blank"><p>Deployed App</p></a>
+                      <a href="https://github.com/simplythebex/sei-project-1" target="_blank"><p>ReadMe</p></a>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
-            <div class="glide__arrows" data-glide-el="controls">
-              <button class="glide__arrow glide__arrow--left" data-glide-dir="<"> < </button>
-              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
-            </div>
+            <!-- <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
+            </div> -->
           </div>
       </div>
       </div>
@@ -97,6 +141,18 @@
     <script type="text/javascript" src="./js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
-      new Glide('.glide').mount()
+      const options = {
+        type: 'carousel',
+        perView: 3,
+        autoplay: 750,
+        hoverpause: true,
+        animationDuration: 2000,
+        breakpoints: {
+          900: {
+            perView: 1
+          },
+        }
+      }
+      new Glide('.glide', options).mount()
     </script>
   </body>
