@@ -133,7 +133,7 @@ nav li:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 600px;
+  height: 800px;
   background-color: #cdc6a5;
 } 
 .box {
@@ -161,50 +161,109 @@ i {
   margin: 5px auto;
 }
 
+/* project styling */
 .projects {
   background-color: #f0dcca;
-  height: 500px;
+  height: 800px;
 }
 
 .projects h2 {
   margin: 0;
   padding: 20px;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 /* carousel styling */
 .carousel-container {
-  height: 300px;
+  height: 400px;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* padding: 10px; */
-  margin: 0 auto;
+  align-items:flex-end;
+  margin: 175px auto auto auto;
 }
 
 .carousel-container img {
   object-fit: contain;
-  height: 200px;
   width: 100%;
+  top: 0;
 }
 
 .carousel-card {
-  /* background-color: white; */
   padding: 10px 0;
+  height: 500px;
   margin: 20px;
+  align-items: flex-end;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 
+              0 2px 2px rgba(0, 0, 0, 0.1), 
+              0 4px 4px rgba(0, 0, 0, 0.1), 
+              0 8px 8px rgba(0, 0, 0, 0.1), 
+              0 16px 16px rgba(0, 0, 0, 0.1);
+  cursor: auto;
 }
 
 .carousel-container h4 {
   font-family: 'Limelight', cursive;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  margin-bottom: 20px;
 }
 
-.carousel-card .description {
+.carousel-container p {
+  font-size: 1em;
+  margin: 0 10px;
+}
+
+.carousel-card .links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.carousel-card a {
+  color: black;
+}
+
+/* background  styling */
+
+.background {
+  background-color: #cdc6a5;
+  height: 1000px;
+}
+
+.background-jobs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.background h2 {
+  margin: 0;
+  padding-top: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.job-card {
+  width: 40%;
+  margin: 20px;
+}
+
+.job-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.job-header img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 5px;
 }
 
 /* footer styling  */
