@@ -138,11 +138,11 @@ nav li:hover {
   justify-content: space-between;
   align-items: center;
   background-color: #cdc6a5;
-  padding-bottom: 50px;
+  padding: 0 30px;
 } 
 .box {
   width: 50%;
-  height: 600px;
+  height: 500px;
   margin: auto 40px;
 }
 
@@ -169,6 +169,7 @@ p {
 .projects {
   background-color: #f0dcca;
   padding-bottom: 50px;
+  padding-top: 30px;
 }
 
 .projects h2 {
@@ -243,7 +244,6 @@ p {
 hr {
   color: black;
 }
-
 
 .background h2 {
   margin: 0;
@@ -334,12 +334,12 @@ img.ga, img.mhra, img.barclays {
   padding: 10px;
 }
 
-li {
+.grow {
   transition: all .2s ease-in-out; 
   text-align: center;
 }
 
-li:hover {
+.grow:hover {
   transform: scale(1.2);
 }
 
@@ -347,7 +347,6 @@ li:hover {
 
 footer {
   background-color: #f0dcca;
-  color: #696d7d;
   text-align: center;
   padding: 20px;
 }
@@ -362,6 +361,148 @@ footer p {
 @media only screen and (max-width: 900px) {
   .about {
     flex-direction: column;
-    height: 1300px;
+    height: 1000px;
   }
+
+  .box {
+    width: 80%
+  }
+
+  .carousel-container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about {
+    flex-direction: column;
+    height: 1000px;
+  }
+
+  .box {
+    width: 80%
+  }
+
+  .about h2 {
+    text-align: center;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .carousel-container img {
+    width: 100%;
+  }
+
+  .job-info {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .job-info {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .background {
+    padding: 0 10px 20px 10px 10px;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  .job-info {
+    font-size: 0.9em;
+    height: 125px;
+  }
+
+  .info {
+    font-size: 1em;
+    padding: 5px;
+  }
+
+  .heading {
+    font-size: 1.3em;
+    padding: 0;
+    height: 50px;
+  }
+
+  /* contact  */
+
+  .contact h2 {
+    font-size: 1.2em;
+    padding-top: 60px;
+  }
+  .contact-info {
+    width: 300px;
+    height: 300px;
+  }
+
+  .contact ul {
+    font-size: 1.2em;
+  }
+
+  .contact i {
+    font-size: 1em;
+  }
+
+  footer p {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  /* background */
+
+  h2 {
+    font-size: 1.5em;
+  }
+  .job-info {
+    font-size: 0.7em;
+    height: 125px;
+  }
+
+  .titles {
+    height:
+      20px;
+  }
+
+  .info {
+    font-size: 1em;
+    padding: 5px;
+  }
+
+  .heading {
+    font-size: 1em;
+    padding: 0;
+    height: 50px;
+  }
+
+  /* contact  */
+
+  .contact h2 {
+    font-size: 1.2em;
+    padding-top: 60px;
+  }
+  .contact-info {
+    width: 250px;
+    height: 250px;
+  }
+
+  .contact ul {
+    font-size: 0.8em;
+  }
+
+  .contact i {
+    font-size: 0.8em;
+  }
+
+  footer p {
+    font-size: 1em;
+  }
+  
 }
