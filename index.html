@@ -16,11 +16,11 @@
   <body>
     <nav>
       <ul>
-        <li>about me</li>
-        <li>projects</li>
-        <li>background</li>
-        <li>interests</li>
-        <li>contact</li>
+        <li><a href="#about">about me</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#background">background</a></li>
+        <li><a href="#interests">interests</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>
     </nav>
     <header>
@@ -37,7 +37,7 @@
         </div>
       </div>
     </header>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about">
         <div class="bio box">
           <h2>About me</h2>
@@ -65,7 +65,7 @@
         </div>
       </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="projects">
         <h2>Projects</h2>
         <div class="carousel-container">
@@ -139,76 +139,71 @@
       </div>
       </div>
     </section>
-    <section class="background">
+    <section class="background" id="background">
       <h2>Background</h2>
       <div class="background-jobs">
+
           <div class="job-card">
             <div class="job-header">
               <div class="job-logos">
-                <img src="assets/GA-logo.png" alt="general assembly" />
-                <img src="assets/Barclays-logo.png" alt="Barclays" />
+                <img class="ga" src="assets/GA-logo.png" alt="general assembly" />
+                <img class="barclays" src="assets/Barclays-logo.png" alt="Barclays" />
               </div>
               <div class="job-info">
                 <h4>Instructional Assistant</h4>
                 <h6>General Assembly & Barclays</h6>
-                <h6>08/2021</h6>
+                <h6>Aug 2021</h6>
               </div>
-            </div>
-            <div class="job-description">
-              <p>Aided with delivery of the Programming for Non-Programmers course to participants of the Barclays graduate programme.</p>
-              <ul>
-                <li>Supported learner with programming fundamentals</li>
-                <li>Managed work channels, including Slack and Zoom</li>
-              </ul>
             </div>
           </div>
 
-          <div class="job-card">
-            <div class="job-header">
-              <div class="job-logos">
-                <img src="assets/GA-logo.png" alt="general assembly" />
-              </div>
-              <div class="job-info">
-                <h4>Software Engineering Immersive Student</h4>
-                <h6>General Assembly</h6>
-                <h6>05/2021 - 08/2021</h6>
-              </div>
-            </div>
-            <div class="job-description">
-              <p>I learnt to build full stack apps through online lessons, daily stand-ups, labs, pair-coding, group projects and independent projects. The four modules focussed primarily on HTML/CSS, JavaScript, React.js and Backend technologies such as Python, Django,  Express, Node and MongoDB.</p>
-            </div>
-          </div>
+          <hr />
 
-          <div class="job-card">
-            <div class="job-header">
-              <div class="job-logos">
-                <img src="assets/NIBSC-logo.png" alt="NIBSC" />
-              </div>
-              <div class="job-info">
-                <h4>Scientist, Live Viral Vaccines</h4>
-                <h6>National Institute of Biological Standard and Controls (NIBSC), MHRA</h6>
-                <h6>08/2019 - 05/2021</h6>
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-logos">
+                  <img class="ga" src="assets/GA-logo.png" alt="general assembly" />
+                </div>
+                <div class="job-info">
+                  <h4>Software Engineering Immersive Student</h4>
+                  <h6>General Assembly</h6>
+                  <h6>May 2021 - Aug 2021</h6>
+                </div>
               </div>
             </div>
-            <div class="job-description">
-              <p>Supported release of vaccines to the UK and emerging markets</p>
-              <ul>
-                <li>Supported batch release of vaccines and development of biological standards</li>
-                <li>Worked to tight deadlines to support work around Covid-19 vaccines</li>
-                <li>Analysed of generated data using of statistical software; Graphpad Prism, Minitab</li>
-                <li>Generated and maintained standard operating procedures for use in laboratories</li>
-              </ul>
+
+            <hr />
+
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-logos">
+                  <img class="mhra" src="assets/NIBSC-logo.png" alt="NIBSC" />
+                </div>
+                <div class="job-info">
+                  <h4>Scientist, Live Viral Vaccines</h4>
+                  <h6>National Institute of Biological Standard and Controls (NIBSC), MHRA</h6>
+                  <h6>Aug 2019 - May 2021</h6>
+                </div>
+              </div>
             </div>
-          </div>
 
       </div>
+
     </section>
+
+    <section class="contact">
+      <div class="contact-info">
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="https://www.github.com/simplythebex" target="_blank"><i class="fab fa-github"></i>github/simplythebex</a></li>
+        <li><a href="https://www.linkedin.com/in/bex-jones/" target="_blank"><i class="fab fa-linkedin"></i>in/bex-jones</a></li>
+        <li><i class="fas fa-envelope"></i>becca.jones@gmail.com</li>
+      </ul>
+    </div>
+
+    </section>
+
     <footer>
-      <div class="mini-icons">
-        <a href="https://www.github.com/simplythebex" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/bex-jones/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <i class="fas fa-envelope"></i>
-      </div>
       <p>Built by Bex using HTML5, CSS3 and vanilla JavaScript</p>
     </footer>
     <script type="text/javascript" src="./js/app.js"></script>
@@ -216,9 +211,9 @@
     <script>
       const options = {
         type: 'carousel',
-        autoplay: 5000,
+        autoplay: 3000,
         hoverpause: true,
-        animationDuration: 3000,
+        animationDuration: 2000,
         perView: 3,
         breakpoints: {
           900: {

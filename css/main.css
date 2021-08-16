@@ -22,6 +22,10 @@ nav li {
   font-family: 'Roboto', sans-serif;
   border-radius: 5px;
 }
+li a {
+  color: black;
+  text-decoration: none;
+}
 nav li:hover {
   cursor: pointer;
   background-color: #cdc6a5;
@@ -133,8 +137,8 @@ nav li:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 800px;
   background-color: #cdc6a5;
+  padding-bottom: 50px;
 } 
 .box {
   width: 50%;
@@ -156,7 +160,7 @@ p {
   font-size: 5em;
 }
 
-i {
+.icons i {
   width: 100px;
   margin: 5px auto;
 }
@@ -164,7 +168,7 @@ i {
 /* project styling */
 .projects {
   background-color: #f0dcca;
-  height: 800px;
+  padding-bottom: 50px;
 }
 
 .projects h2 {
@@ -230,8 +234,8 @@ i {
 /* background  styling */
 
 .background {
-  background-color: #cdc6a5;
-  height: 1000px;
+  background-color: #f0dcca;
+  padding-bottom: 100px;
 }
 
 .background-jobs {
@@ -249,8 +253,9 @@ i {
 }
 
 .job-card {
-  width: 40%;
+  width: 100%;
   margin: 20px;
+  padding: 20px;
 }
 
 .job-header {
@@ -259,11 +264,79 @@ i {
   align-items: center;
 }
 
-.job-header img {
+
+img.ga, img.mhra, img.barclays {
   width: 50px;
   height: 50px;
   object-fit: contain;
   margin-right: 5px;
+}
+
+.job-logos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 50px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.job-info h4 {
+  font-family: 'Limelight', cursive;
+  font-size: 1.5em;
+  margin: 5px;
+}
+
+.job-info {
+  height: 100px;
+  margin-left: 10px;
+}
+
+.job-info h6 {
+  font-size: 1.2em;
+  padding: 5px;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* contact styling */
+
+.contact {
+  background-color: #f0dcca;
+  padding-bottom: 50px;
+}
+
+.contact h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.contact-info {
+  background-color: #8d9f87;
+  color: white;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.contact ul {
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  margin-left: 50px;
+  font-size: 1.2em;
+}
+
+.contact a {
+  color: white;
+}
+
+.contact i {
+  font-size: 1.2em;
+  padding: 10px;
 }
 
 /* footer styling  */
@@ -275,19 +348,11 @@ footer {
   padding: 20px;
 }
 
-footer .mini-icons {
-  font-size: 2em;
-  padding-bottom: 10px;
-}
-
 footer p {
   margin: 0;
   font-size: 1.2em;
 }
 
-footer i {
-  color: white;
-}
 
 @media only screen and (max-width: 900px) {
   .about {
