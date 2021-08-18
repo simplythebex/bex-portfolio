@@ -480,6 +480,20 @@ footer p {
   .background {
     padding: 0 10px 20px 10px 10px;
   }
+
+  .titles {
+    display: none;
+  }
+
+  .job-info {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .info {
+    width: 90%;
+  }
+
   h2 {
     font-size: 2em;
   }
@@ -497,6 +511,16 @@ footer p {
     font-size: 1.3em;
     padding: 0;
     height: 50px;
+  }
+
+  /* about */
+
+  .bio {
+    margin-bottom: 30px;
+  }
+
+  .skills {
+    margin-top: 30px;
   }
 
   /* contact  */
@@ -657,7 +681,7 @@ footer p {
   }
   .job-info {
     font-size: 0.7em;
-    height: 125px;
+    padding: 5px;
   }
 
   .titles {
@@ -674,6 +698,10 @@ footer p {
     font-size: 1em;
     padding: 0;
     height: 50px;
+  }
+
+  .down-contact {
+    font-size: 0.8em;
   }
 
   /* contact  */
