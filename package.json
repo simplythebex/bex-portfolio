@@ -1,5 +1,11 @@
 {
   "dependencies": {
     "@glidejs/glide": "^3.4.1"
-  }
+  },
+  "name": "bex-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:simplythebex/bex-portfolio.git",
+  "author": "simplythebex <becca.jones@live.co.uk>",
+  "license": "MIT"
 }
