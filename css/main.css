@@ -40,7 +40,7 @@ nav li:hover {
 /* hero styling  */
 .hero {
   width: 100%;
-  height: 750px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,6 +160,7 @@ nav li:hover {
 
 .about-section {
   background-color: #cdc6a5;
+  height: 100vh;
 }
 
 .about {
@@ -172,7 +173,7 @@ nav li:hover {
 .box {
   width: 50%;
   height: 500px;
-  margin: auto 40px;
+  margin: 0 40px;
 }
 
 h2 {
@@ -198,13 +199,16 @@ p {
   text-align: center;
   font-size: 3em;
   color: black;
-  padding-bottom: 75px;
+  margin-top: 10px;
+  position: relative;
+  bottom: -100px;
 }
 
 /* project styling */
 .projects {
   background-color: #f0dcca;
   padding-top: 10px;
+  height: 100vh;
 }
 
 .projects h2 {
@@ -272,7 +276,7 @@ p {
   justify-content: center;
   font-size: 3em;
   color: black;
-  padding-bottom: 75px;
+  padding-bottom: 50px;
   margin: 0;
 }
 
@@ -349,6 +353,7 @@ img.ga, img.mhra, img.barclays {
 .contact {
   background-color: #f0dcca;
   padding: 20px 0;
+  height: 100vh;
 }
 
 .up {
@@ -357,7 +362,7 @@ img.ga, img.mhra, img.barclays {
 }
 
 .up p {
-  font-size: 3em;
+  font-size: 2.7em;
 }
 
 .fa-chevron-up {
@@ -418,7 +423,7 @@ img.ga, img.mhra, img.barclays {
 footer {
   background-color: #f0dcca;
   text-align: center;
-  padding: 100px 0 20px 0;
+  padding: 20px 0 20px 0;
 }
 
 footer p {
@@ -429,9 +434,17 @@ footer p {
 
 
 @media only screen and (max-width: 900px) {
+
+  .about-section {
+    height: 1000px;
+  }
   .about {
     flex-direction: column;
-    height: 1000px;
+  }
+
+  .down-project {
+    bottom: 300px;
+    position: relative;
   }
 
   .box {
@@ -474,9 +487,127 @@ footer p {
   .job-info {
     height: 150px;
   }
+
+  .down-project {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 575px) {
+
+  /* hero */
+
+  .hero { 
+    height: 500px;
+  }
+
+  .decoration {
+    height: 100px;
+  }
+
+  .semi-circle-top {
+    width: 150px;
+    height: 75px;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    top: 200px;
+  }
+
+  .circle-top {
+    width: 75px;
+    height: 75px;
+    border: 7px solid #696d7d;
+    top: 170px;
+  }
+
+  .semi-circle-mid {
+    width: 350px;
+    height: 175px;
+    border-bottom-left-radius: 175px;
+    border-bottom-right-radius: 175px;
+    top: 130px;
+  }
+
+  .decoration h1 {
+    font-size: 1.7em;
+    top: -15px;
+  }
+
+  .decoration h2 {
+    font-size: 1.3em;
+    top: -25px;
+  }
+
+  .arc-big {
+    width: 250px;
+    height: 125px;
+    border-top-left-radius: 170px;
+    border-top-right-radius: 170px;
+    border: 5px solid #696d7d;
+    border-bottom: 0;
+    bottom: 20px;
+  }
+
+  .arc-small {
+    width: 150px;
+    height: 75px;
+    border-top-left-radius: 85px;
+    border-top-right-radius: 85px;
+    border: 5px solid #696d7d;
+    border-bottom: 0;
+    bottom: 100px;
+  }
+
+  .circle-bottom {
+    width: 50px;
+    height: 50px;
+    bottom: 140px;
+  }
+
+  .down p {
+    display: none;
+  }
+
+  /* about */
+
+  .about-section {
+    min-height: 1200px;
+  }
+
+  .down-project {
+    display: none;
+  }
+
+  /* projects */
+
+
+  .carousel-container {
+    width: 100%;
+  }
+
+  .carousel-container img {
+    width: 100%;
+  }
+
+  .carousel-container h4 {
+    font-size: 1.2em;
+  }
+
+  .carousel-container p {
+    font-size: 0.9em;
+  }
+
+  .carousel-card {
+    height: 500px;
+  }
+
+  .down-background {
+    display: none;
+  }
+
+  /* background */
+
+
   .background {
     padding: 0 10px 20px 10px 10px;
   }
@@ -513,6 +644,10 @@ footer p {
     height: 50px;
   }
 
+  .down-contact {
+    display: none;
+  }
+
   /* about */
 
   .bio {
@@ -524,6 +659,15 @@ footer p {
   }
 
   /* contact  */
+
+  .up {
+    display: none;
+  }
+
+  .contact {
+    margin: 60px 0;
+    height: fit-content;
+  }
 
   .contact h2 {
     font-size: 1.2em;
@@ -543,11 +687,81 @@ footer p {
   }
 
   footer p {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 480px) {
+.icons {
+  font-size: 4em;
+  text-align: center;
+}
+
+.down-project p {
+  padding: 20px;
+  margin: 20px;
+}
+
+.carousel-container {
+  height: 550px;
+}
+
+.bio {
+  height: 650px;
+  margin-bottom: 20px;
+}
+
+.skills {
+  height: 600px;
+  margin-top: 70px;
+}
+
+.about {
+  margin-bottom: 0;
+  min-height: 1200px;
+}
+
+.about-section {
+  min-height: 1300px;
+}
+
+.nav-big {
+  font-size: 0.7em;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+  .icons {
+    font-size: 3em;
+  }
+
+  .icons i {
+    width: 50px;
+    padding: 10px;
+  }
+
+  .bio p {
+    font-size: 1.2em;
+  }
+
+  .bio {
+    margin: 10px;
+  }
+
+  .skills {
+    margin: 0;
+    height: 400px;
+  }
+
+  .nav-big {
+    font-size: 0.6em;
+  }
+  
+}
+
+
+@media only screen and (max-width: 325px) {
 
   /* hero */
 
@@ -650,10 +864,11 @@ footer p {
     height: 300px;
   }
 
-  /* projecst */
+  /* projects */
 
   .carousel-container {
     width: 100%;
+    height: 500px;
   }
 
   .carousel-container img {
