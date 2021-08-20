@@ -20,6 +20,7 @@ nav ul {
   padding: 20px;
   z-index: 20;
   position: relative;
+  color: #383A43;
 }
 
 nav li {
@@ -94,6 +95,7 @@ nav li:hover {
   position: relative;
   top: -30px;
   text-align: center;
+  color: #383A43;
 }
 .decoration h2 {
   font-size: 2em;
@@ -179,11 +181,14 @@ nav li:hover {
 h2 {
   font-family: 'Limelight', cursive;
   font-size: 3em;
+  color: #383A43;
 }
 
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.3em;
+  font-weight: 500;
+  color: #383A43;
 }
 
 .icons {
@@ -193,12 +198,13 @@ p {
 .icons i {
   width: 100px;
   margin: 5px auto;
+  color: #383A43;
 }
 
 .down-project p {
   text-align: center;
   font-size: 3em;
-  color: black;
+  color: #383A43;
   margin-top: 10px;
   position: relative;
   bottom: -100px;
@@ -215,6 +221,7 @@ p {
   margin: 0;
   padding: 10px;
   text-align: center;
+  color: #383A43;
 }
 
 /* carousel styling */
@@ -253,6 +260,7 @@ p {
   text-align: center;
   font-size: 1.3em;
   margin-bottom: 20px;
+  color: #383A43;
 }
 
 .carousel-container p {
@@ -278,6 +286,7 @@ p {
   color: black;
   padding-bottom: 50px;
   margin: 0;
+  color: #383A43;
 }
 
 /* background  styling */
@@ -297,6 +306,7 @@ hr {
   padding-top: 50px;
   text-align: center;
   margin-bottom: 30px;
+  color: #f0dcca;
 }
 
 img.ga, img.mhra, img.barclays {
@@ -367,7 +377,7 @@ img.ga, img.mhra, img.barclays {
 
 .fa-chevron-up {
   margin-bottom: 20px;
-  color: #696d7d;
+  color: #383A43;
   text-align: center;
   font-size: 20em;
 }
@@ -381,6 +391,7 @@ img.ga, img.mhra, img.barclays {
   margin-bottom: 10px;
   text-align: center;
   padding-top: 120px;
+  color: #f0dcca;
 }
 
 .contact-info {
@@ -942,4 +953,9 @@ footer p {
     font-size: 1em;
   }
   
+}
+
+.bold {
+  font-weight: 900;
+  color: black;
 }
